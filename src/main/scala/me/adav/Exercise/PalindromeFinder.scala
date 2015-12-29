@@ -48,6 +48,9 @@ object PalindromeFinder {
   def findLongestPalindromes(phrase: String, n: Int) = findAllDistinctPalindromes(phrase) take n
 
   def main(args: Array[String]) = {
+
+    assume(args.length > 0, "Include palindromes as a list of arguments.")
+
     args.foreach { inputString =>
       if (args.length > 1) println("\nInput: " + inputString)
 
